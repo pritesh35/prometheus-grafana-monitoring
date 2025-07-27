@@ -1,0 +1,19 @@
+# Ignore the Docker named volume data if it ever gets mapped locally
+grafana-data/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# .gitignore
+# Ignore Docker-related files
+*.log
+*.tmp
+*.bak
+
+# Ignore node_modules (if applicable)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
