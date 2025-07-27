@@ -3,9 +3,6 @@
 This project sets up a basic application monitoring stack using **Prometheus** for metrics collection and **Grafana** for visualization. The entire stack is orchestrated with **Docker Compose**.
 
 
-![Dashboard Screenshot](https://github.com/user-attachments/assets/eb1e0599-9cff-40dd-ae56-5277738ac33)
-*(Pro tip: Take a screenshot of your final dashboard, upload it to the GitHub issue tracker, and paste the URL here.)*
-
 ## Prerequisites
 
 -   Docker
