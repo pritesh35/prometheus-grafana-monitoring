@@ -1,19 +1,52 @@
-# Ignore the Docker named volume data if it ever gets mapped locally
+# ===================================================================
+# A comprehensive .gitignore for a clean development repository
+# ===================================================================
+
+# Operating System Files
+# -------------------------------------------------------------------
+# Ignore files created by macOS, Windows, and Linux systems
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Directories
+# -------------------------------------------------------------------
+# Ignore configuration folders from popular code editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Docker & Local Data
+# -------------------------------------------------------------------
+# This is for if you ever use local folders (bind mounts) for data
+# instead of Docker's named volumes.
 grafana-data/
+prometheus-data/
 
-# Ignore system files
-.DS_Store
-Thumbs.db
+# Environment Variables
+# -------------------------------------------------------------------
+# Never commit secrets or local environment variables!
+# The .env file is standard for storing API keys and passwords.
+.env
+.env.*
+!.env.example
 
-# .gitignore
-# Ignore Docker-related files
+# Log Files
+# -------------------------------------------------------------------
+# Ignore log files that might be generated during testing or debugging
 *.log
-*.tmp
-*.bak
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Ignore node_modules (if applicable)
+# Common Dependency Directories
+# -------------------------------------------------------------------
+# Ignore folders that contain downloaded packages for common languages
 node_modules/
-
-# Ignore system files
-.DS_Store
-Thumbs.db
+__pycache__/
